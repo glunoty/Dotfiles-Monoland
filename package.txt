@@ -1,5 +1,0 @@
-hyprland
-swww
-google-chrome
-git
-github-desktop
