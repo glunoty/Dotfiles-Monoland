@@ -1,6 +1,6 @@
 {
   "clock": {
     "timezone": "Asia/Jakarta",
-    "format": "{:%d %b, %H:%M}",
+    "format": "  {:%d %b, %H:%M}"
   }
 }

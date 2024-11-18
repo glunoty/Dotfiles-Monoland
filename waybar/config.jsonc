@@ -2,21 +2,22 @@
   "include": [
     "~/.config/waybar/modules/clock.jsonc",
     "~/.config/waybar/modules/battery.jsonc",
-    "~/.config/waybar/modules/network.jsonc"
+    "~/.config/waybar/modules/network.jsonc",
+    "~/.config/waybar/modules/pulseaudio.jsonc",
+    "~/.config/waybar/modules/custom-power.jsonc",
+    "~/.config/waybar/modules/hyprland-workspaces.jsonc"
+
   ],
   "layer": "top",
   "position": "top",
-  "height": 30, // Waybar height (to be removed for auto height)
-  "spacing": 4, // Gaps between modules (4px)
+  "height": 45, // Waybar height (to be removed for auto height)
+  "spacing": 8, // Gaps between modules (4px)
   "modules-left": ["clock", "hyprland/workspaces"],
-  "modules-center": [],
   "modules-right": [
-    "cpu",
-    "memory",
-    "battery",
+    "tray",
     "pulseaudio",
     "network",
-    "tray",
+    "battery",
     "custom/power"
   ],
 
@@ -32,47 +33,7 @@
     "format": "{}% "
   },
 
-  "power-profiles-daemon": {
-    "format": "{icon}",
-    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
-    "tooltip": true,
-    "format-icons": {
-      "default": "",
-      "performance": "",
-      "balanced": "",
-      "power-saver": ""
-    }
-  },
 
-  "pulseaudio": {
-    // "scroll-step": 1, // %, can be a float
-    "format": "{volume}% {icon} {format_source}",
-    "format-bluetooth": "{volume}% {icon} {format_source}",
-    "format-bluetooth-muted": " {icon} {format_source}",
-    "format-muted": " {format_source}",
-    "format-source": "{volume}% ",
-    "format-source-muted": "",
-    "format-icons": {
-      "headphone": "",
-      "hands-free": "",
-      "headset": "",
-      "phone": "",
-      "portable": "",
-      "car": "",
-      "default": ["", "", ""]
-    },
-    "on-click": "pavucontrol"
-  },
-  "custom/power": {
-    "format": "⏻ ",
-    "tooltip": false,
-    "menu": "on-click",
-    "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
-    "menu-actions": {
-      "shutdown": "shutdown",
-      "reboot": "reboot",
-      "suspend": "systemctl suspend",
-      "hibernate": "systemctl hibernate"
-    }
-  }
+
+  
 }
