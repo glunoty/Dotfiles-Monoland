@@ -1,0 +1,6 @@
+{
+  "clock": {
+    "timezone": "Asia/Jakarta",
+    "format": "{:%d %b, %H:%M}",
+  }
+}
