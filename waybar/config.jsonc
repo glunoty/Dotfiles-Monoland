@@ -3,37 +3,25 @@
     "~/.config/waybar/modules/clock.jsonc",
     "~/.config/waybar/modules/battery.jsonc",
     "~/.config/waybar/modules/network.jsonc",
-    "~/.config/waybar/modules/pulseaudio.jsonc",
+    "~/.config/waybar/modules/wireplumber.jsonc",
     "~/.config/waybar/modules/custom-power.jsonc",
-    "~/.config/waybar/modules/hyprland-workspaces.jsonc"
-
+    "~/.config/waybar/modules/hyprland-workspaces.jsonc",
+    "~/.config/waybar/modules/group-sysinfo.jsonc"
   ],
   "layer": "top",
   "position": "top",
-  "height": 45, // Waybar height (to be removed for auto height)
-  "spacing": 8, // Gaps between modules (4px)
-  "modules-left": ["clock", "hyprland/workspaces"],
+  "height": 45,
+  "spacing": 8,
+  "modules-left": [
+    "clock",
+    "hyprland/workspaces"
+  ],
   "modules-right": [
     "tray",
-    "pulseaudio",
+    "group/sysinfo",
+    "wireplumber",
     "network",
     "battery",
     "custom/power"
-  ],
-
-  "tray": {
-    // "icon-size": 21,
-    "spacing": 10
-  },
-  "cpu": {
-    "format": "{usage}% ",
-    "tooltip": false
-  },
-  "memory": {
-    "format": "{}% "
-  },
-
-
-
-  
+  ]
 }
