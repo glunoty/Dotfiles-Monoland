@@ -1,0 +1,15 @@
+{
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "window.menuBarVisibility": "toggle",
+  "workbench.sideBar.location": "right",
+  "editor.fontFamily": "\"JetBrains Mono\", \"Symbols Nerd Font Mono\"",
+  "editor.minimap.enabled": false,
+  "workbench.startupEditor": "none",
+  "editor.cursorBlinking": "expand",
+  "editor.lineHeight": 1.8,
+  "workbench.iconTheme": "catppuccin noctis icons",
+  "catppuccin-noctis-icons.hidesExplorerArrows": false,
+  "editor.fontSize": 16,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
+}
