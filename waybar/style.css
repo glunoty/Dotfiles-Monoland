@@ -28,18 +28,20 @@
 /* GLOBAL CONFIGURATION */
 
 * {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 window#waybar {
-    background-color: @base;
-    border-bottom: 3px solid @surface0;
-    transition-property: background-color;
-    transition-duration: .5s;
+  background-color: @base;
+  border-bottom: 3px solid @surface0;
+  transition-property: background-color;
+  transition-duration: 0.5s;
 }
 
-.modules-left, .modules-right, .modules-center {
-    margin:10px 10px;
+.modules-left,
+.modules-right,
+.modules-center {
+  margin: 10px 10px;
 }
 
 #clock,
@@ -57,155 +59,153 @@ window#waybar {
 #scratchpad,
 #power-profiles-daemon,
 #mpd {
-    padding: 0 10px;
+  padding: 0 10px;
 }
 
 /* LEFT MODULES */
 
 #clock {
-    background-color: @pink;
-    color: @crust;
+  background-color: @pink;
+  color: @crust;
 }
 
 #workspaces button {
-    padding: 0 5px;
-    background-color: @surface0;
-    color: @text;
-    border: none;
-    border-radius: 0;
+  padding: 0 5px;
+  background-color: @surface0;
+  color: @text;
+  border: none;
+  border-radius: 0;
 }
 
 #workspaces button.active {
-    color: @crust;
-    background-color: @overlay2;
+  color: @crust;
+  background-color: @overlay2;
 }
 
 #workspaces button:hover {
-    box-shadow: inset 0 -3px @text;
+  box-shadow: inset 0 -3px @text;
 }
 
 #workspaces button.urgent {
-    color: @crust;
-    background-color: @red;
+  color: @crust;
+  background-color: @red;
 }
 
 /* RIGHT MODULES */
 
 #custom-power {
-    padding: 0px 10px;
-    background-color: @teal;
-    color: @crust;
-  }
-
-#battery {
-    background-color: @green;
-    color: @crust;
+  padding: 0px 10px;
+  background-color: @teal;
+  color: @crust;
 }
 
-#battery.charging, #battery.plugged {
-    color: @crust;
-    background-color: @yellow;
+#battery {
+  background-color: @green;
+  color: @crust;
+}
+
+#battery.charging,
+#battery.plugged {
+  color: @crust;
+  background-color: @yellow;
 }
 
 #battery.critical:not(.charging) {
-    background-color: @red;
-    color: @crust;
+  background-color: @red;
+  color: @crust;
 }
 
 #network {
-    background-color: @lavender;
-    color: @crust;
+  background-color: @lavender;
+  color: @crust;
 }
 
 #wireplumber {
-    background-color: @mauve;
-    color: @crust;
+  background-color: @mauve;
+  color: @crust;
 }
 
 #wireplumber.muted {
-    background-color: @mauve;
-    color: @crust;
+  background-color: @mauve;
+  color: @crust;
 }
 
 #sysinfo {
-    background-color: @flamingo;
-    color: @crust;
-    padding: 0 10px;
+  background-color: @flamingo;
+  color: @crust;
+  padding: 0 10px;
 }
-
-
-
 
 /* ////////// */
 
 label:focus {
-    background-color: #000000;
+  background-color: #000000;
 }
 
 #tray {
-    background-color: #2980b9;
+  background-color: #2980b9;
 }
 
 #tray > .passive {
-    -gtk-icon-effect: dim;
+  -gtk-icon-effect: dim;
 }
 
 #tray > .needs-attention {
-    -gtk-icon-effect: highlight;
-    background-color: #eb4d4b;
+  -gtk-icon-effect: highlight;
+  background-color: #eb4d4b;
 }
 
 #idle_inhibitor {
-    background-color: #2d3436;
+  background-color: #2d3436;
 }
 
 #idle_inhibitor.activated {
-    background-color: #ecf0f1;
-    color: #2d3436;
+  background-color: #ecf0f1;
+  color: #2d3436;
 }
 
 #mpd {
-    background-color: #66cc99;
-    color: #2a5c45;
+  background-color: #66cc99;
+  color: #2a5c45;
 }
 
 #mpd.disconnected {
-    background-color: #f53c3c;
+  background-color: #f53c3c;
 }
 
 #mpd.stopped {
-    background-color: #90b1b1;
+  background-color: #90b1b1;
 }
 
 #mpd.paused {
-    background-color: #51a37a;
+  background-color: #51a37a;
 }
 
 #scratchpad {
-    background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 #scratchpad.empty {
-	background-color: transparent;
+  background-color: transparent;
 }
 
 #privacy {
-    padding: 0;
+  padding: 0;
 }
 
 #privacy-item {
-    padding: 0 5px;
-    color: white;
+  padding: 0 5px;
+  color: white;
 }
 
 #privacy-item.screenshare {
-    background-color: #cf5700;
+  background-color: #cf5700;
 }
 
 #privacy-item.audio-in {
-    background-color: #1ca000;
+  background-color: #1ca000;
 }
 
 #privacy-item.audio-out {
-    background-color: #0069d4;
+  background-color: #0069d4;
 }
